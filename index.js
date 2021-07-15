@@ -34,12 +34,17 @@ client.on('message', msg => {
     .setColor('#ffff4d')
     .setTitle('The Server IP:')
     .addField('DuckDupes.minehut.gg', 'Version: 1.17+')
+    .addField('Syphere.minehut.gg', 'Version: 1.17+')
 
     const AdEmbed = new Discord.MessageEmbed()
     .setColor('#ffff4d')
     .setTitle('Advertise the server:')
+    .addField("DuckDupes:", 'Advertising on the server: DuckDupes!')
     .addField('Default:', '/ad DuckDupes for a server with Random Items /Dupe Void and more!')
     .addField('VIP:', '/ad DuckDupes &efor a server with &8Random Items /Dupe Void &eand more!')
+    .addField("Syphere:", 'Advertising on the server: Syphere!')
+    .addField('Default:', 'Can you survive in Bedrock &cSphere without dying?')
+    .addField ('VIP:', '&cCan you survive in a &8Bedrock &cSphere without &c&ldying?')
 
     .setThumbnail('https://cdn.discordapp.com/icons/737765981807706142/66a075ffe40c1c1a5925c26a432fa6ab.png?size=128')
 
