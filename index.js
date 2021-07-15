@@ -26,7 +26,7 @@ client.on('message', msg => {
     const HelpEmbed = new Discord.MessageEmbed()
     .setColor('#ffff4d')
     .setTitle('Commands:')
-    .addField('Misc:', 'd!ip, d!ad')
+    .addField('Misc:', 'd!ip, d!ad, d!invite')
 
     .setFooter('I hope this helped!', (msg.author.avatarURL()))
 
@@ -49,5 +49,7 @@ client.on('message', msg => {
         msg.channel.send(IPEmbed);
     } else if (msg.content === `${PREFIX}ad`) {
         msg.channel.send(AdEmbed);
+    } else if (msg.content === `${PREFIX}invite`) {
+        msg.channel.send("https://discord.gg/7YczgdCkQH")
     }
 })
