@@ -26,13 +26,28 @@ client.on('message', msg => {
     const HelpEmbed = new Discord.MessageEmbed()
     .setColor('#ffff4d')
     .setTitle('Commands:')
-    .addField('Misc:', 'd!ip')
+    .addField('Misc:', 'd!ip, d!ad')
 
     .setFooter('I hope this helped!', (msg.author.avatarURL()))
+
+    const IPEmbed = new Discord.MessageEmbed()
+    .setColor('#ffff4d')
+    .setTitle('The Server IP')
+    .addField('DuckDupes.minehut.gg', 'Version: 1.17+')
+
+    const AdEmbed = new Discord.MessageEmbed()
+    .setColor('#ffff4d')
+    .setTitle('Advertise the server')
+    .addField('Here are the ad command to advertise the server:')
+    .setDescription('Default:', '/ad DuckDupes For a server with Random Items /Dupe Void and more!')
+    .setDescription('VIP:', '/ad DuckDupes &eFor a server with &8Random Items /Dupe Void &eand more!')
+    .setThumbnail('https://cdn.discordapp.com/icons/737765981807706142/66a075ffe40c1c1a5925c26a432fa6ab.png?size=128')
 
     if (msg.content === `${PREFIX}help`) {
         msg.channel.send(HelpEmbed);
     } else if (msg.content === `${PREFIX}ip`) {
-        msg.channel.send("The Server IP is: DuckDupes.minehut.gg");
+        msg.channel.send(IPEmbed);
+    } else if (msg.content === `${PREFIX}ad`) {
+        msg.channel.send(AdEmbed);
     }
 })
