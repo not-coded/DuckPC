@@ -50,6 +50,6 @@ client.on('message', msg => {
     } else if (msg.content === `${PREFIX}ad`) {
         msg.channel.send(AdEmbed);
     } else if (msg.content === `${PREFIX}invite`) {
-        msg.channel.send("https://discord.gg/7YczgdCkQH")
+        msg.channel.send("https://discord.gg/TeVApzcB3n")
     }
 })
