@@ -26,7 +26,7 @@ client.on('message', msg => {
     const HelpEmbed = new Discord.MessageEmbed()
     .setColor('#ffff4d')
     .setTitle('Commands:')
-    .addField('Misc:', 'd!ip, d!ad, d!invite')
+    .addField('Misc:', 'd!ip, d!ad, d!invite, d!apply')
 
     .setFooter('I hope this helped!', (msg.author.avatarURL()))
 
@@ -48,6 +48,7 @@ client.on('message', msg => {
 
     .setThumbnail('https://cdn.discordapp.com/icons/737765981807706142/66a075ffe40c1c1a5925c26a432fa6ab.png?size=128')
 
+
     if (msg.content === `${PREFIX}help`) {
         msg.channel.send(HelpEmbed);
     } else if (msg.content === `${PREFIX}ip`) {
@@ -56,5 +57,8 @@ client.on('message', msg => {
         msg.channel.send(AdEmbed);
     } else if (msg.content === `${PREFIX}invite`) {
         msg.channel.send("https://discord.gg/TeVApzcB3n");
+    } else if (msg.content === `${PREFIX}apply`) {
+        msg.channel.send("https://forms.gle/nxCQqNWtdcP3qfmB6");
+        
     }
 })
