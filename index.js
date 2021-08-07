@@ -26,7 +26,7 @@ client.on('message', msg => {
     const HelpEmbed = new Discord.MessageEmbed()
     .setColor('#ffff4d')
     .setTitle('Commands:')
-    .addField('Misc:', 'd!ip, d!ad, d!invite')
+    .addField('Misc:', 'd!ip, d!ad, d!invite, d!clan')
 
     .setFooter('I hope this helped!', (msg.author.avatarURL()))
 
@@ -48,6 +48,17 @@ client.on('message', msg => {
 
     .setThumbnail('https://cdn.discordapp.com/icons/737765981807706142/66a075ffe40c1c1a5925c26a432fa6ab.png?size=128')
 
+    const ClanEmbed = new Discord.MessageEmbed()
+    .setColor('#ffffff')
+    .setTitle('Clan Commands')
+    .addField("Here are all the clan commands you can use:")
+    .addField("d!clan create <name>", "is used to create a clan with a name")
+    .addField("d!clan invite <@clan member>", "is used to invite a discord member to the clan")
+    .addField("d!clan accept <clan name>", "is used to accept an invitation from the clan owner.")
+    .addField("d!clan kick <@clan member>", "is used to accept an invitation from the clan owner.")
+    .addField("d!clan delete", "is used to completly delete a clan.")
+    .addField("d!clan leave", "is used to leave a clan.")
+
     if (msg.content === `${PREFIX}help`) {
         msg.channel.send(HelpEmbed);
     } else if (msg.content === `${PREFIX}ip`) {
@@ -55,6 +66,6 @@ client.on('message', msg => {
     } else if (msg.content === `${PREFIX}ad`) {
         msg.channel.send(AdEmbed);
     } else if (msg.content === `${PREFIX}invite`) {
-        msg.channel.send("https://discord.gg/TeVApzcB3n")
+        msg.channel.send("https://discord.gg/TeVApzcB3n");  
     }
 })
