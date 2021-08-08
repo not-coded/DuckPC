@@ -1,5 +1,8 @@
 const express = require('express');
 const server = express();
+const favicon = require('serve-favicon');
+const path = require('path')
+const app = express()
 
 server.all('/', (req, res)=>{
     // res.send('Your bot is alive!')

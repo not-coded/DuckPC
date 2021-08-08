@@ -17,7 +17,6 @@ client.on('ready', () => {
 });
 
 client.login(TOKEN); // Logs the bot in
-
 keepAlive() // Keeps the bot alive
 
 client.on('message', msg => {
@@ -45,7 +44,6 @@ client.on('message', msg => {
     .addField ('VIP:', '/ad Syphere &cCan you survive in a &8Bedrock &cSphere without &c&ldying?')
 
     .setThumbnail('https://cdn.discordapp.com/icons/737765981807706142/66a075ffe40c1c1a5925c26a432fa6ab.png?size=128') // Server icon
-
 
     if (msg.content === `${PREFIX}help`) {
         msg.channel.send(HelpEmbed); // Sends the help embed
