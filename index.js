@@ -23,7 +23,7 @@ client.on('message', msg => {
     const HelpEmbed = new Discord.MessageEmbed()
     .setColor('#ffff4d') // Light yellow
     .setTitle('Commands:')
-    .addField('Misc:', 'd!ip, d!ad, d!invite, d!apply')
+    .addField('Misc:', 'd!ip, d!ad, d!invite, d!apply, d!website')
 
     .setFooter('I hope this helped!', (msg.author.avatarURL())) // User's avatar
 
@@ -55,5 +55,9 @@ client.on('message', msg => {
         msg.channel.send("https://discord.gg/TeVApzcB3n"); // Sends the invite link
     } else if (msg.content === `${PREFIX}apply`) {
         msg.channel.send("https://forms.gle/nxCQqNWtdcP3qfmB6"); // Sends the forum link
+    } else if (msg.content === `${PREFIX}website`) {
+        msg.channel.send("https://duckdupes.cf"); // Sends the website link
+    } else if (msg.content === `${PREFIX}site`) {
+        msg.channel.send("https://duckdupes.cf"); // Sends the site link
     }
 })
