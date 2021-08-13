@@ -1,5 +1,5 @@
 Hello there, this is used for hosting DuckPC, a discord bot!
-Now this is the source code for the bot, incase you want to use some of my code but please credit me for the part of code you use
+This is the source code for the bot, incase you want to use some of my code but please credit me for the part of code you use
 
 The Minecraft Server IP is:
 DuckDupes.cf or DuckDupes.minehut.gg
