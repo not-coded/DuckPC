@@ -1,5 +1,6 @@
 <h1 align="center"> Hello there</h1>
 <h3 align="center"> This is used for hosting DuckPC, a discord bot! </h3> <br>
+
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 ### 📖 Info
 - **Open source :** This is the source code for the bot 🤖, incase you want to use some of my code you absolutely can! 😄
