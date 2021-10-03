@@ -1,4 +1,4 @@
-<h1 align="center"> Hello there</h1>
+<h1 align="center"> Hello there!</h1>
 <h3 align="center"> This is used for hosting DuckPC, a discord bot! </h3> <br>
 
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
