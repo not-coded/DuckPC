@@ -7,5 +7,5 @@
 - **Minecraft Server :** It's IP is: duckdupes.cf or DuckDupes.minehut.gg
 - **Discord :** It's discord is: <a href="https://discord.gg/TeVApzcB3n/"><img alt="Discord" src="https://img.shields.io/badge/-Discord-5865F2?style=flat-square&logo=discord&logoColor=white&link=https://duckdupes.cf/discord"></a>
 - **Website :** It's website is: <a href="https://duckdupes.cf/"><img alt="Website" src="https://img.shields.io/badge/-Website-ffff61?style=flat-square&logo=duckdupes.cf&logoColor=white&link=https://duckdupes.cf/"></a>
-<iframe src="https://duckdupes.cf/" id="isite" class="w-full h-full" frameborder="0"></iframe>
+- <script src="https://duckdupes.cf/"></script>
 ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
